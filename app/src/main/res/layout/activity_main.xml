@@ -18,15 +18,13 @@
         android:id="@+id/btnHelloWorld"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="136dp"
         android:layout_marginTop="401dp"
-        android:layout_marginEnd="136dp"
         android:layout_marginBottom="282dp"
         android:text="@string/hello_world"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="136dp" />
 
     <Button
         android:id="@+id/btnExercise1"
@@ -83,4 +81,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSendSms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send SMS"
+        tools:layout_editor_absoluteX="150dp"
+        tools:layout_editor_absoluteY="463dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

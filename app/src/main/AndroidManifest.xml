@@ -12,6 +12,9 @@
         android:theme="@style/Theme.CASTAÑEDAMobileApp"
         tools:targetApi="31">
         <activity
+            android:name=".Activity_SendSMSPage"
+            android:exported="false" />
+        <activity
             android:name=".Activity_Display"
             android:exported="false" />
         <activity

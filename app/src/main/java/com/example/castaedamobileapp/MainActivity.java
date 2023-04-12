@@ -18,9 +18,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button act1Button = findViewById(R.id.btnActvity1);
         Button act2Button = findViewById(R.id.btnActivity2);
         Button act3Button = findViewById(R.id.btnActivity3);
+        Button sendSms = findViewById(R.id.btnSendSms);
         act1Button.setOnClickListener(this);
         act2Button.setOnClickListener(this);
         act3Button.setOnClickListener(this);
+        sendSms.setOnClickListener(this);
     }
 
 
@@ -40,6 +42,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btnActivity3:
                 Toast.makeText(MainActivity.this, "Activity 3 button is clicked!", Toast.LENGTH_SHORT).show();
 
+                break;
+            case R.id.btnSendSms:
+                Intent smsIntent = new Intent(this, Activity_SendSMSPage.class);
+                startActivity(smsIntent);
                 break;
         }
     }

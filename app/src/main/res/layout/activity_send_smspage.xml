@@ -11,27 +11,35 @@
         android:id="@+id/editTextPhoneNum"
         android:layout_width="382dp"
         android:layout_height="45dp"
+        android:layout_marginEnd="16dp"
         android:ems="10"
         android:hint="enter phone number here"
         android:inputType="phone"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="16dp" />
-
-    <Button
-        android:id="@+id/btnSendSMS"
-        android:layout_width="382dp"
-        android:layout_height="48dp"
-        android:text="SEND SMS"
-        tools:layout_editor_absoluteX="17dp"
-        tools:layout_editor_absoluteY="156dp" />
+        app:layout_constraintBottom_toTopOf="@+id/editTextMessage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnClearSMS"
         android:layout_width="382dp"
         android:layout_height="48dp"
+        android:layout_marginBottom="440dp"
         android:text="Clear"
-        tools:layout_editor_absoluteX="17dp"
-        tools:layout_editor_absoluteY="213dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnSendSMS"
+        android:layout_width="382dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="20dp"
+        android:text="SEND SMS"
+        app:layout_constraintBottom_toTopOf="@+id/btnClearSMS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.413"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/editTextMessage"
@@ -41,6 +49,10 @@
         android:gravity="start|top"
         android:hint="enter your message here"
         android:inputType="textMultiLine"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="73dp" />
+        app:layout_constraintBottom_toTopOf="@+id/btnSendSMS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.549" />
 </androidx.constraintlayout.widget.ConstraintLayout>

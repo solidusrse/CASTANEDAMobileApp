@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CASTAÑEDAMobileApp</string>
+    <string name="hello_world">Hello World</string>
+    <string name="exercise_1">Exercise 1</string>
+    <string name="activity_1">Activity 1</string>
+    <string name="activity_2">Activity 2</string>
+    <string name="activity_3">Activity 3</string>
+    <string name="student_registration_page">Student Registration Page</string>
+</resources>

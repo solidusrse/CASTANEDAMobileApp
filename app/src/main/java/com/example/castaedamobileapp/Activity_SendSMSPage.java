@@ -31,10 +31,14 @@ public class Activity_SendSMSPage extends AppCompatActivity {
             phoneNo = phoneNum.getText().toString();
             msg = message.getText().toString();
             Intent intent = new Intent(Intent.ACTION_VIEW, Uri.fromParts("sms", phoneNo, null));
-            intent.putExtra("sms_body", (CharSequence) message);
+            intent.putExtra("sms_body", msg);
             startActivity(intent);
 
             Toast.makeText(this, "SMS Sent", Toast.LENGTH_SHORT).show();
+        });
+        clear.setOnClickListener(view -> {
+            phoneNum.setText("");
+            message.setText("");
         });
     }
 }

@@ -36,6 +36,7 @@ public class Activity_SendSMSPage extends AppCompatActivity {
 
             Toast.makeText(this, "SMS Sent", Toast.LENGTH_SHORT).show();
         });
+
         clear.setOnClickListener(view -> {
             phoneNum.setText("");
             message.setText("");

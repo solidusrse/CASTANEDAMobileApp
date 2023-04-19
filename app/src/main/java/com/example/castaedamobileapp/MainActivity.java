@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button act2Button = findViewById(R.id.btnActivity2);
         Button act3Button = findViewById(R.id.btnActivity3);
         Button sendMsg = findViewById(R.id.btnSendSms);
-        @SuppressLint({"MissingInflatedId", "LocalSuppress"}) Button maps = findViewById(R.id.btnOpenMaps);
+        Button maps = findViewById(R.id.btnOpenMaps);
         act1Button.setOnClickListener(this);
         act2Button.setOnClickListener(this);
         act3Button.setOnClickListener(this);
